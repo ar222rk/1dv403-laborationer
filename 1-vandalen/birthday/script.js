@@ -7,11 +7,36 @@ window.onload = function(){
 		
 
 
-			// Din kod här.
-
-
-
-
+			// Din kod härasdasd
+		
+   var nowDate = new Date(); // idag
+   var MyDate = new Date(date); // inmatnings datum
+   
+   var DifferentDay = (nowDate.getTime() - MyDate.getTime())/(1000*60*60*24);
+  
+  
+  
+   var day = nowDate.getDate() - MyDate.getDate();
+   var month = nowDate.getMonth() - MyDate.getMonth();
+   
+    if (date === ""){
+   	throw new Error("Fel!! fan gör du!!!");
+   }
+   
+   if (day === 0 && month ===0){
+   	return 0;
+   }
+   
+   if (day === -1 && month === 0){
+   	return 1;
+   }
+   
+   return Math.floor (DifferentDay);
+   
+ 
+   
+  
+   
 	};
 	// ------------------------------------------------------------------------------
 

@@ -8,9 +8,28 @@ window.onload = function(){
 		// Returnera den konverterade strängen.
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
 	
+    var Myarray = [];
+      Myarray = str.split("");
+    
+    for (var i= 0; i < str.length; i+=1) {
+    	
+    	if (Myarray[i] === Myarray[i].toUpperCase())
+    	{
+    		Myarray[i] = Myarray[i].toLowerCase(); 
+    	}
+    	else 
+    	{
+    		Myarray[i] = Myarray[i].toUpperCase();
+    	}
+    }
+    
+    
+    str = Myarray.toString();
+    str = str.split(",").join(""); // split = dela / join= utbyte
+    str = str.split("a").join("#");
+    str = str.split("A").join("#");
 
-
-
+  return [str];
 
 
 
