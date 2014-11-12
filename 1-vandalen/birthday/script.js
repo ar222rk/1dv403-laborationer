@@ -11,27 +11,36 @@ window.onload = function(){
 		
    var nowDate = new Date(); // idag
    var MyDate = new Date(date); // inmatnings datum
+   // skillnad mellan dagen du fyller och idag 
    
-   var DifferentDay = (nowDate.getTime() - MyDate.getTime())/(1000*60*60*24);
+			MyDate.setFullYear(nowDate.getFullYear());
+   var DifferentDay = Math.ceil((MyDate.getTime() - nowDate.getTime())/(1000*60*60*24));
   
   
-  
-   var day = nowDate.getDate() - MyDate.getDate();
+  // uträkning för att få dag och månad
+   var day = MyDate.getDate() - nowDate.getDate(); 
    var month = nowDate.getMonth() - MyDate.getMonth();
    
-    if (date === ""){
-   	throw new Error("Fel!! fan gör du!!!");
+   
+    if (date === ""){ 
+   	throw new Error("Fel!! vad gör du!!!");
    }
    
    if (day === 0 && month ===0){
    	return 0;
    }
    
-   if (day === -1 && month === 0){
+   if (day === 1 && month === 0){
    	return 1;
    }
    
-   return Math.floor (DifferentDay);
+  if (DifferentDay <= -1)
+  {
+  	DifferentDay += 365;
+  }
+   
+   
+   return DifferentDay;
    
  
    

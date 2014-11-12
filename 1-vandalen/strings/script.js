@@ -7,15 +7,16 @@ window.onload = function(){
 		// Plats för förändring.		
 		// Returnera den konverterade strängen.
 		// Vid fel, kasta ett undantag med ett meddelande till användaren. 
+		
 	
-    var Myarray = [];
-      Myarray = str.split("");
+    var Myarray = []; 
+      Myarray = str.split("");// splitlar objekt i arrayen 
     
-    for (var i= 0; i < str.length; i+=1) {
+    for (var i= 0; i < str.length; i+=1) { // ska loppar genom arrayen så att allt ska förendras
     	
-    	if (Myarray[i] === Myarray[i].toUpperCase())
+    	if (Myarray[i] === Myarray[i].toUpperCase()) // ska ändra till stror bokstäver
     	{
-    		Myarray[i] = Myarray[i].toLowerCase(); 
+    		Myarray[i] = Myarray[i].toLowerCase();  // samma fast lilla bokstäver
     	}
     	else 
     	{
