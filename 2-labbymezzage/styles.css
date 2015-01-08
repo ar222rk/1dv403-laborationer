@@ -1,0 +1,140 @@
+
+#container {
+       height:1000px;
+    background-image: url("letter.jpg");
+    width:auto;
+    background-color:gray;
+    margin:0 auto;
+}
+
+
+ main{
+        box-shadow:0 10px 25px;
+        color:white;
+        text-shadow:2px 2px black;
+        background-image: url("postman.png");
+        font-size:45px;
+        padding-top:50px;
+        height:100px;
+        margin-left:30%;
+        background-color:#000000;
+        width:780px;
+        text-align:center;
+}
+
+
+
+textarea {
+    width:700px;
+    height:200px;
+    font-size:25px;
+    font-family:arial;
+}
+
+ header {
+    font-size:55px;
+    text-shadow:2px 2px black;
+     text-align:center;
+     color:Green;
+}
+
+textarea {
+        padding:60px;
+        margin-top:30px;
+        border-color:black;
+        border-width :10px;
+        background-color:#fff;
+        height:auto;
+        width:670px
+}
+
+    
+input {
+    float:right;
+    color:white;
+    width:150px;
+    height:30px;
+    font-size:20px;
+    text-shadow:1px 0px black;
+    background-color:black;
+}
+
+#dom {
+        padding:60px;
+        color:white;
+        margin-top:60px;
+border-color:black;
+        border-width :10px;
+        background-color:#080000;
+        max-height:60px;
+        width:670px;
+        height:500px;
+        overflow-y:scroll;
+
+    
+}
+
+.displayText {
+    color:black;
+    font-size:30px;
+    width:300px;
+}
+
+.displayTime{
+    color:#700000;
+    font-size:20px;
+    text-shadow:1px 0px black;
+    float:right;
+    position:absolute;
+   bottom:0;
+   right:0;
+}
+
+
+
+.textBox {
+  padding-right:70px;
+  padding-left:5px;
+  font-family:26px;
+  border:1px solid black;
+  background-color:silver;
+  text-shadow:1px 0px black;
+  width:auto;
+  height:auto;
+  min-height:50px;
+  position:relative;
+  word-break:break-all;
+  margin:5px;
+  
+
+
+    
+}
+.clock {
+    width:30px;
+    height:26px;
+    float:right;
+    position:absolute;
+    top:5px;
+    right:30px;
+ 
+
+}
+
+.x{
+    float:right;
+    position:absolute;
+    top:5px;
+    right:0;
+   
+    
+
+}
+
+
+
+
+
+
+
+
