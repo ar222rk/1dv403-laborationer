@@ -1,0 +1,42 @@
+
+#container {
+    height:1000px;
+    width:auto;
+    background-image:url("quiz.jpg");
+    margin:0 auto;
+}
+
+
+header{
+    color:white;
+    text-align:center;
+    font-size:45px;
+}
+
+#board{
+    position:relative;
+    height:150px;
+    background-color:white;
+    top:200px;
+    width:300px;
+    left:400px;
+} 
+
+#question{
+    position:relative;
+    font-size:20px;
+    text-shadow:1px 1px black;
+    margin:2px;
+    color:red;
+    width:100px;
+    height:40px;
+    background-color:white;
+}
+
+#questionStatus{
+    color:green;
+    font-size:20px;
+    background-color:white;
+    text-shadow:1px 1px black;
+    height:overflow scroll;
+}

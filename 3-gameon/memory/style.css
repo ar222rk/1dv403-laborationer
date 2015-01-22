@@ -1,0 +1,55 @@
+
+#container
+{
+    height:1000px;
+    background-image:url("poker.jpg");
+    width:auto;
+    margin:auto;
+}
+
+header{
+    font-size:55px;
+    text-align:center;
+    color:white;
+}
+
+#Board{
+       position:absolute;
+        border-width:5px;
+       border-color:red;
+       background-color:black;
+       top:200px;
+       left:400px;
+       width:700px;
+       height:500px;
+       background-color:#fff;
+      
+}
+
+#playboard {
+    
+       position:absolute;
+        border-width:5px;
+       background-color:blue;
+       top:0;
+       left:100px;
+       width:500px;
+       height:400px;
+       background-color:#000;
+      
+    
+}
+
+#ShowBox {
+    font-size:24px;
+    text-shadow: 1px 1px black;
+    color:red;
+    text-align:center;
+    position:relative;
+    left:590px;
+    top:450px;
+    width:346px;
+    height:55px;
+    background-color:#3366FF;
+    border:5px solid black;
+}
